@@ -17,3 +17,6 @@ Audit Endpoints give you a total count of endpoints/requests hit by the users
 ### Running the spring boot app
 
 All you need to do is package it and run with `mvn package && java -jar target/codechallenge-0.0.1-SNAPSHOT.jar`
+
+* Spring boot server runs on `8080`
+* MongoDB server runs on `8900`
