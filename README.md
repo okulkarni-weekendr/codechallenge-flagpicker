@@ -16,4 +16,4 @@ Audit Endpoints give you a total count of endpoints/requests hit by the users
 
 ### Running the spring boot app
 
-All you need to do is package it and run with `mvn package && java -jar target/gs-spring-boot-0.1.0.jar`
+All you need to do is package it and run with `mvn package && java -jar target/codechallenge-0.0.1-SNAPSHOT.jar`
