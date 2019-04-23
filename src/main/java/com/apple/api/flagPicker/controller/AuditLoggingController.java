@@ -5,8 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.actuate.trace.http.HttpTraceEndpoint;
 import org.springframework.web.bind.annotation.*;
 
-import static com.apple.api.flagPicker.constants.RestConstants.URI.COUNTRY_REQUEUST_PARAM;
-import static com.apple.api.flagPicker.constants.RestConstants.URI.MAIN_URI;
+import static com.apple.api.flagPicker.constants.RestConstants.URI.*;
 
 /**
  * The logger controller that gives the counts of hits for each country
@@ -32,12 +31,12 @@ public class AuditLoggingController {
 
     @RequestMapping(value = RestConstants.URI.AUDIT_ENDPOINT_CONTINENT, method = RequestMethod.GET)
     public @ResponseBody
-    Long getContinentCount(@RequestParam(COUNTRY_REQUEUST_PARAM) String continent) {
+    Long getContinentCount(@RequestParam(CONTINENT_REQUEUST_PARAM) String continent) {
         continent = continent.replace(" ", "%20");
 
         String finalContinent = new StringBuilder()
                 .append(MAIN_URI)
-                .append("?continent=")
+                .append("/continent/")
                 .append(continent).toString();
 
         return returnCount(finalContinent);

@@ -9,7 +9,6 @@ import java.util.List;
 
 public interface ApiService {
     public List<Continent> getContinents() throws JsonProcessingException;
-
-
+    public Continent getContinentByName(String continentName) throws JsonProcessingException;
     public Country getCountryAndFlag(String countryName) throws JsonProcessingException;
 }

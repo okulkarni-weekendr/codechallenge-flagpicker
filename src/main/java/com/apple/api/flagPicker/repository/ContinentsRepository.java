@@ -13,4 +13,5 @@ public interface ContinentsRepository {
     List<Continent> getAllContinents();
     Country findByCountryName(String countryName);
     void addContinent(Continent continent);
+    Continent findByContinentName(String continentName);
 }

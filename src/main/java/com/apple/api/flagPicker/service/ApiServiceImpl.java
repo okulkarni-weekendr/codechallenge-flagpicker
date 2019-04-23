@@ -20,6 +20,11 @@ public class ApiServiceImpl implements ApiService {
     }
 
     @Override
+    public Continent getContinentByName(String continentName) throws JsonProcessingException {
+        return continentsRepository.findByContinentName(continentName);
+    }
+
+    @Override
     public Country getCountryAndFlag(String countryName) throws JsonProcessingException {
         return continentsRepository.findByCountryName(countryName);
     }

@@ -31,4 +31,10 @@ public class ApiController {
     Country getCountryAndFlag(@RequestParam(COUNTRY_REQUEUST_PARAM) String countryName) throws JsonProcessingException {
         return apiService.getCountryAndFlag(countryName);
     }
+
+    @RequestMapping(path = URI.LIST_ALL_COUNTRIES_FOR_CONTINENT, method = RequestMethod.GET)
+    public @ResponseBody
+    Continent getCountriesForContinent(@PathVariable(value = "continent") String continentName) throws JsonProcessingException {
+        return apiService.getContinentByName(continentName);
+    }
 }
