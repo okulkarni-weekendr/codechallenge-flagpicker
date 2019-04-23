@@ -16,6 +16,8 @@ HELP.md
 *.iws
 *.iml
 *.ipr
+.mvn
+mv*
 
 ### NetBeans ###
 /nbproject/private/
