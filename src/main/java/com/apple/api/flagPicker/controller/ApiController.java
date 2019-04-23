@@ -12,6 +12,9 @@ import java.util.List;
 
 import static com.apple.api.flagPicker.constants.RestConstants.URI.COUNTRY_REQUEUST_PARAM;
 
+/**
+ * Main controller class for countries and continents
+ */
 @RestController
 public class ApiController {
 

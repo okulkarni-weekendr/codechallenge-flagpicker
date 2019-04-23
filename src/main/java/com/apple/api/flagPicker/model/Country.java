@@ -1,5 +1,8 @@
 package com.apple.api.flagPicker.model;
 
+/**
+ * Country embedded document
+ */
 public class Country {
     private String name;
     private String flag;

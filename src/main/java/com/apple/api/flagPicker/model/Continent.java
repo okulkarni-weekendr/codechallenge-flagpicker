@@ -6,6 +6,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
+/**
+ * Continent document
+ */
 @Document(collection = "continents")
 public class Continent {
 

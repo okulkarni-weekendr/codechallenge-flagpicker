@@ -17,6 +17,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * A class that runs with CommandLine runner.
+ * It loads all the data into the embedded mongodb server
+ */
 @Component
 public class Init {
 
