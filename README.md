@@ -6,6 +6,7 @@ This repo contains code for the challenge. The specifics of this code is, it use
 
 * Get all continents and its information : `GET /api/flagPicker/continents`
 * Get information/flag of a country : `GET /api/flagPicker?country={countryName}`
+* Get list of all countries for a continent : `GET /api/flagPicker/continent/{continent}`
 
 ### Audit Endpoints
 
